@@ -1,0 +1,17 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Open Sans;
+}
+.top-bar{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color:hsl(43, 64%, 53%) ;
+    padding: 15px 120px;
+}
+.top-bar-img{
+    height: 15px;
+    width: 15px;
+
+}
