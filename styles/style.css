@@ -1,47 +1,138 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     font-family: Open Sans;
 }
 
-/* top bar styles */
-.top-bar{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    background-color:hsl(43, 64%, 53%) ;
-    padding: 15px 100px;
+.button {
+    padding: 10px 25px;
+    background-color: rgb(255, 102, 0);
+    border: none;
+    border-radius: 35px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
 }
-.top-bar-img{
+
+.icon {
     height: 15px;
     width: 15px;
 
 }
 
+/* top bar styles */
+.top-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: hsl(43, 64%, 53%);
+    padding: 15px 100px;
+}
+
+
 /* nav bar styles */
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* color: white; */
+    color: white;
     padding: 20px 100px;
     /* font-weight: 600; */
 }
-.nav-option-container{
+
+.nav-option-container {
     display: flex;
     justify-content: space-between;
-    align-items:center;
+    align-items: center;
     gap: 60px;
     font-weight: 600;
     padding-left: 150px;
 
 }
-.ticket{
-    padding: 10px 25px;
-    background-color:rgb(255, 102, 0);
-    border: none;
-    border-radius: 35px;
-    font-weight: 600;
+
+.ticket:hover {
+    background-color: red;
+}
+
+.nav-option {
+    cursor: pointer;
+}
+
+nav>.nav-option-container>.nav-option:hover {
+    color: red;
+}
+
+/* banner style starts */
+
+.banner {
+    background-image: url("../assets/images/bg1.jpg"),
+    linear-gradient(rgba(0, 0, 0, 0.045),rgba(0, 0, 0, 0.96));
+    background-blend-mode: overlay ;
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+}
+
+.banner-content {
+    text-align: center;
+    padding: 250px 50px 200px 50px;
+    margin-top: -78px;
     color: white;
+}
+.banner-content>h5{
+    font-size: small;
+    padding-bottom: 5px;
+}
+.banner-content>h1{
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.banner-content>button{
+    margin-top: 25px;
+}
+.banner-footer {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+.footer-data{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+
+/* about section style starts */
+
+.about{
+    display: flex;
+    justify-content: space-evenly;
+    background-image: url("../assets/images/edward-unsplash-blur.jpg");
+    padding: 100px 100px;
+}
+.about-details{
+    color: white;
+    padding-top: 15px;
+
+}
+.about-details>h1{
+    font-size: 45px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+.about-details>p{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.img-container{
+    
+}
+.about-img{
+    border-radius: 20px;
+    height: 70%;
+    margin-left: 50px;
 }
